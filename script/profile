@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-function profile {
+function _nodeenv_profile {
   local shome="${_nodeenv_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
   PATH="$shome/bin:$PATH"
 }
 
-profile
+_nodeenv_profile
