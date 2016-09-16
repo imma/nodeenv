@@ -5,7 +5,7 @@ function bootstrap {
   source "$shome/script/profile"
 
   block compile virtualenv
-  ln -nfs ../vendor/virtualenv/bin/nodeenv bin/
+  ln -nfs ../vendor/virtualenv/bin/nodeenv "$shome/bin/"
 }
 
 bootstrap
